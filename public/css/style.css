@@ -1,16 +1,20 @@
-label {
-display: block;
-margin: 5px 0;
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #ffbfd6; /* pink background */
+  color: #21313a;
+  font-family: Arial, sans-serif;
 }
-
 
 table {
-border-collapse: collapse;
-border-spacing: 0;
+  background: rgba(208, 95, 95, 0.85); /* light panel so text stays readable */
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-td,
-th {
-padding: 5px;
-border-bottom: 1px solid #aaa;
+td, th {
+  padding: 5px;
+  border-bottom: 1px solid #aaa;
+  color: #21313a;
 }
