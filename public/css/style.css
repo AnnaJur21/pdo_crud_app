@@ -1,20 +1,27 @@
+/* colour background */
 html, body {
   height: 100%;
   margin: 0;
-  background: #ffbfd6; /* pink background */
-  color: #21313a;
-  font-family: Arial, sans-serif;
+  background: 
+    linear-gradient(135deg, rgba(255,0,80,0.06), rgba(0,200,255,0.04));
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #4e4b4b;
+  font-family: "Arial", sans-serif;
 }
+
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+}
+
 
 table {
-  background: rgba(208, 95, 95, 0.85); /* light panel so text stays readable */
-  border-collapse: collapse;
+  background: rgba(0,0,0,0.35);
   border-radius: 6px;
-  overflow: hidden;
-}
-
-td, th {
-  padding: 5px;
-  border-bottom: 1px solid #aaa;
-  color: #21313a;
+  padding: 8px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.03);
 }
