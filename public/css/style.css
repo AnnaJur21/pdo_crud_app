@@ -1,27 +1,14 @@
-/* colour background */
-html, body {
-  height: 100%;
-  margin: 0;
-  background: 
-    linear-gradient(135deg, rgba(255,0,80,0.06), rgba(0,200,255,0.04));
-  background-size: cover;
-  background-blend-mode: overlay;
-  color: #4e4b4b;
-  font-family: "Arial", sans-serif;
+
+label {
+display: block;
+margin: 5px 0;
 }
-
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-}
-
-
 table {
-  background: rgba(0,0,0,0.35);
-  border-radius: 6px;
-  padding: 8px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.03);
+border-collapse: collapse;
+border-spacing: 0;
+}
+td,
+th {
+padding: 5px;
+border-bottom: 1px solid #aaa;
 }

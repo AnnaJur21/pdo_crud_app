@@ -28,7 +28,7 @@ if (isset($_POST['submit']) && $statement){
 echo $new_user['firstname']. ' successfully added';
 }
 ?>
-<h2>Add a user</h2>
+<h2>Please add new user</h2>
 <form method="post">
 <label for="firstname">First Name</label>
 <input type="text" name="firstname" id="firstname">
