@@ -3,6 +3,9 @@
 * Delete a user
 */
 require "../common.php";
+
+$success = "";
+
 if (isset($_GET["id"])) {
 try {
 require_once '../src/DBconnect.php';
@@ -11,7 +14,12 @@ $sql = "DELETE FROM users WHERE id = :id";
 $statement = $connection->prepare($sql);
 $statement->bindValue(':id', $id);
 $statement->execute();
-$success = "User ". $id. " successfully deleted";
+
+if ($statement->rowCount() > 0) {
+      $success = "User " . $id . " successfully deleted.";
+    } else {
+      $success = null; // or set an error message if you prefer
+    }
 } catch(PDOException $error) {
 echo $sql . "<br>" . $error->getMessage();
 }
